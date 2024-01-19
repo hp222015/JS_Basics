@@ -5,7 +5,6 @@ var arrayname = [1, 1, 2, 3, 4, 5];
 arrayname.forEach(elements => {
       console.log(elements);
 });
-
 let fruits = ["Apple", "Orange", "kiwi"];
 let l = fruits.length;
 console.log(fruits[l - 1]);
