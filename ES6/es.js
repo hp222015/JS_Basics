@@ -1,35 +1,48 @@
-// var Template_literals;
-// let firstName="harshit";
-// let lastName="pawar";
 
-//console.log(Your name is ${firstName} ${lastName});
+// Arrow function
+const add = (a,b) => {return a+b};
+console.log(add(3,4));
 
-var spread_operator;
+// var Template_literals
+const firstName="harshit";
+const str=`hello my name is ${firstName}`;
+console.log(str);
+
+// Destructuring assignment
+const arr=[2,3,4,4,5,2,123,34];
+const [a,b,c,...x]=arr;
+console.log(a);
+console.log(b);
+console.log(x);
+
+
+// var spread_operator;
 
 var arr1=[0,1,2];
 var arr2=[3,4,5];
-
 var arr3=[...arr1,"harshit", ...arr2,40];
-//console.log(arr3);
-var arr4=[...arr1];
-//console.log(arr4);
-var obj1 ={
-      x : 1, y : 2
-}
-//console.log(obj1);
+console.log(arr3);
 
-var destructuring_assignment;
+// Object Property Shorthand
+const firstname = "John";
+const lastname = "Doe";
 
-let arr=[10,20,30,40,50,60];
+// Without shorthand
+const person1 = {
+  firstName: firstname,
+  lastName: lastname
+};
 
-let [a1,b1] = arr;
-//console.log(a,b);
-let [,a2,b2]=arr;
-//console.log(a,b);
-let[,,,...rest]=arr;
-//console.log(rest);
-// in same way destructuring can be done in objects
-// learn about import export
+// With shorthand
+const person2 = {
+  firstname,
+  lastname
+};
+
+console.log(person1); // { firstName: 'John', lastName: 'Doe' }
+console.log(person2); // { firstName: 'John', lastName: 'Doe' }
+
+
 
 //ES7 features
 let text ="hello world";
