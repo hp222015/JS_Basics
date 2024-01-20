@@ -9,7 +9,7 @@ var spread_operator;
 var arr1=[0,1,2];
 var arr2=[3,4,5];
 
-var arr3=[...arr1,"shinde", ...arr2,40];
+var arr3=[...arr1,"harshit", ...arr2,40];
 //console.log(arr3);
 var arr4=[...arr1];
 //console.log(arr4);
